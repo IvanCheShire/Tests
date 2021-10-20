@@ -1,4 +1,4 @@
-package ru.geekbrains.tests
+package ru.geekbrains.tests.ui
 
 import android.text.Editable
 import android.text.TextWatcher

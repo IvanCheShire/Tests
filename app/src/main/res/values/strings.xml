@@ -5,4 +5,9 @@
     <string name="email_hint">Enter your Email</string>
     <string name="invalid_email">Invalid email</string>
     <string name="valid_email">OK</string>
+    <string name="repeat_email_label">Repeat email address:</string>
+    <string name="emails_not_equal">Emails not equal</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="name_hint">Enter name here</string>
+    <string name="invalid_name">Invalid name</string>
 </resources>
