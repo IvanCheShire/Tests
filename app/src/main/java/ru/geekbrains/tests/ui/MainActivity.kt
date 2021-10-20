@@ -7,6 +7,8 @@ import android.widget.Toast
 import ru.geekbrains.tests.databinding.ActivityMainBinding
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
+import ru.geekbrains.tests.R
+import ru.geekbrains.tests.mvp.model.User
 import ru.geekbrains.tests.mvp.presenter.MainPresenter
 import ru.geekbrains.tests.mvp.view.MainView
 import ru.geekbrains.tests.ui.EmailValidator
@@ -39,8 +41,8 @@ class MainActivity : MvpAppCompatActivity(), MainView {
         Toast.makeText(this@MainActivity, errorMessage, Toast.LENGTH_SHORT).show()
     }
 
-    override fun viewOk() {
-        Toast.makeText(this@MainActivity, getString(R.string.valid_email), Toast.LENGTH_SHORT).show()
+    override fun viewOk(user: User?) {
+        Toast.makeText(this@MainActivity, getString(R.string.hello) + ", ${user?.name}!", Toast.LENGTH_SHORT).show()
     }
 
     override fun viewEmailsNotEqual() {
